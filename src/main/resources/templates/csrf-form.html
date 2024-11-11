@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CSRF Form Example</title>
+</head>
+<body>
+<h1>CSRF Form Example</h1>
+
+<h1>Form</h1>
+<form action="#" th:action="@{/submit}" th:object="${form}" method="post">
+    <p>Data: <input type="text" th:field="*{data}" /></p>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
